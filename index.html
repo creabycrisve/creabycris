@@ -6,845 +6,936 @@
 
 <title>Crea by Cris | Personalización & Producción para Marcas</title>
 
-<meta
-name="description"
-content="Producción y personalización de artículos promocionales y corporativos en grandes cantidades para empresas, marcas, instituciones y eventos."
->
+<meta name="description" content="Productos personalizados y producción al mayor para empresas, marcas, instituciones y eventos.">
 
 <style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-font-family: Arial, Helvetica, sans-serif;
-background:
-radial-gradient(circle at 50% 0%, #35104f 0%, #160d22 32%, #09070d 72%);
-color: #ffffff;
-line-height: 1.6;
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f8f6fb;
+color:#21182c;
+line-height:1.6;
 }
 
-a {
-text-decoration: none;
-color: inherit;
+/* COLORES */
+:root{
+--morado:#6426a8;
+--morado-oscuro:#1c102b;
+--violeta:#8c42d5;
+--lila:#eadcff;
+--blanco:#ffffff;
+--dorado:#d7b36a;
 }
 
-.container {
-width: min(1120px, 90%);
-margin: auto;
+/* NAVEGACIÓN */
+
+nav{
+background:rgba(25,13,38,.96);
+color:white;
+padding:17px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 18px rgba(0,0,0,.15);
 }
 
-/* HEADER */
-
-header {
-position: sticky;
-top: 0;
-z-index: 1000;
-background: rgba(8, 6, 12, 0.92);
-backdrop-filter: blur(12px);
-border-bottom: 1px solid rgba(198, 87, 255, 0.25);
+.brand{
+font-size:24px;
+font-weight:800;
+letter-spacing:.5px;
 }
 
-nav {
-min-height: 72px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 20px;
+.brand span{
+color:#c992ff;
 }
 
-.brand {
-font-size: 25px;
-font-weight: 800;
-letter-spacing: 0.5px;
+nav ul{
+list-style:none;
+display:flex;
+gap:28px;
 }
 
-.brand span {
-color: #d36cff;
-text-shadow: 0 0 15px #b62cff;
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:600;
 }
 
-.nav-links {
-display: flex;
-gap: 24px;
-align-items: center;
-font-size: 14px;
-}
-
-.nav-links a:hover {
-color: #d36cff;
-}
-
-/* BOTONES */
-
-.btn {
-display: inline-block;
-padding: 15px 25px;
-border-radius: 50px;
-font-weight: 700;
-transition: 0.25s ease;
-}
-
-.btn-primary {
-color: #fff;
-background: linear-gradient(135deg, #8d24d6, #d34cff);
-box-shadow:
-0 0 18px rgba(195, 64, 255, 0.55),
-0 0 35px rgba(140, 36, 214, 0.25);
-}
-
-.btn-primary:hover {
-transform: translateY(-2px);
-box-shadow:
-0 0 25px rgba(211, 76, 255, 0.75),
-0 0 50px rgba(140, 36, 214, 0.4);
-}
-
-.btn-outline {
-border: 1px solid #b74cf1;
-color: #e5b8ff;
-margin-left: 10px;
+nav a:hover{
+color:#d7b4ff;
 }
 
 /* HERO */
 
-.hero {
-min-height: 88vh;
-display: flex;
-align-items: center;
-text-align: center;
-position: relative;
-overflow: hidden;
-padding: 80px 0;
+.hero{
+min-height:88vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:80px 20px;
+
+background:
+radial-gradient(circle at 25% 30%, rgba(147,61,232,.38), transparent 34%),
+radial-gradient(circle at 80% 70%, rgba(101,33,180,.28), transparent 32%),
+linear-gradient(135deg,#12091e,#261037 48%,#40125c);
 }
 
-.hero::before {
-content: "";
-position: absolute;
-width: 500px;
-height: 500px;
-border-radius: 50%;
-background: rgba(151, 33, 215, 0.20);
-filter: blur(90px);
-top: -160px;
-left: 50%;
-transform: translateX(-50%);
+.hero-content{
+max-width:950px;
 }
 
-.hero-content {
-position: relative;
-max-width: 900px;
-margin: auto;
+.logo{
+width:230px;
+max-width:70%;
+border-radius:24px;
+margin-bottom:25px;
+box-shadow:0 18px 55px rgba(0,0,0,.35);
 }
 
-.logo-text {
-font-size: clamp(55px, 10vw, 105px);
-font-weight: 800;
-line-height: 0.9;
-margin-bottom: 18px;
-color: #f8eaff;
-text-shadow:
-0 0 10px #e49cff,
-0 0 25px #b833ff,
-0 0 55px #7816b4;
+.badge{
+display:inline-block;
+padding:8px 18px;
+border:1px solid rgba(255,255,255,.25);
+background:rgba(255,255,255,.08);
+border-radius:50px;
+font-size:13px;
+letter-spacing:1px;
+margin-bottom:22px;
 }
 
-.logo-text small {
-display: block;
-margin-top: 18px;
-font-size: 0.28em;
-font-weight: 400;
-font-style: italic;
-color: #d98aff;
+.hero h1{
+font-size:clamp(43px,7vw,82px);
+line-height:1.02;
+margin-bottom:22px;
 }
 
-.tagline {
-text-transform: uppercase;
-letter-spacing: 5px;
-color: #d8c8df;
-font-size: 14px;
-margin: 28px 0;
+.hero h1 span{
+background:linear-gradient(90deg,#fff,#c781ff,#f1d5ff);
+-webkit-background-clip:text;
+color:transparent;
 }
 
-.hero h1 {
-font-size: clamp(32px, 5vw, 57px);
-line-height: 1.08;
-margin-bottom: 22px;
+.hero p{
+max-width:720px;
+margin:0 auto 32px;
+font-size:19px;
+color:#e9e1ef;
 }
 
-.gradient-text {
-background: linear-gradient(90deg, #ffffff, #d780ff, #a43cf0);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:14px;
 }
 
-.hero p {
-max-width: 760px;
-margin: 0 auto 32px;
-color: #c9c2ce;
-font-size: 18px;
+.btn{
+display:inline-block;
+padding:15px 27px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.25s;
 }
 
-.badges {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 10px;
-margin: 30px 0;
+.btn-primary{
+color:white;
+background:linear-gradient(135deg,#7d31c7,#a64ee8);
+box-shadow:0 10px 30px rgba(126,48,198,.4);
 }
 
-.badge {
-padding: 9px 16px;
-border: 1px solid rgba(203, 92, 255, 0.35);
-border-radius: 50px;
-background: rgba(121, 34, 164, 0.12);
-color: #e7c4f7;
-font-size: 13px;
+.btn-secondary{
+color:white;
+border:1px solid rgba(255,255,255,.4);
 }
 
-/* SECCIONES */
-
-section {
-padding: 90px 0;
+.btn:hover{
+transform:translateY(-3px);
 }
 
-.section-title {
-text-align: center;
-margin-bottom: 50px;
+/* BLOQUE CORPORATIVO */
+
+.corporativo{
+background:white;
+padding:75px 7%;
+text-align:center;
 }
 
-.eyebrow {
-color: #c45cff;
-text-transform: uppercase;
-letter-spacing: 4px;
-font-size: 12px;
-font-weight: bold;
-margin-bottom: 12px;
+.small-title{
+color:var(--morado);
+font-size:13px;
+font-weight:800;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.section-title h2 {
-font-size: clamp(30px, 4vw, 46px);
-margin-bottom: 14px;
+.section-title{
+font-size:clamp(32px,5vw,50px);
+margin:8px auto 14px;
+line-height:1.1;
 }
 
-.section-title p {
-max-width: 720px;
-margin: auto;
-color: #aaa2b0;
+.section-description{
+max-width:760px;
+margin:auto;
+color:#6d6573;
+font-size:17px;
 }
 
-/* MAYORISTA */
+/* BENEFICIOS */
 
-.wholesale {
-background: linear-gradient(
-135deg,
-rgba(82, 21, 115, 0.35),
-rgba(17, 11, 24, 0.9)
-);
-border-top: 1px solid rgba(198, 87, 255, 0.2);
-border-bottom: 1px solid rgba(198, 87, 255, 0.2);
+.benefits{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:45px;
 }
 
-.wholesale-box {
-max-width: 900px;
-margin: auto;
-text-align: center;
-padding: 50px 30px;
-border: 1px solid rgba(204, 100, 255, 0.3);
-border-radius: 25px;
-background: rgba(18, 12, 25, 0.72);
-box-shadow: 0 0 45px rgba(139, 38, 190, 0.15);
+.benefit{
+padding:28px 18px;
+border-radius:20px;
+background:#faf7fd;
+border:1px solid #eee5f6;
 }
 
-.wholesale-box h2 {
-font-size: clamp(32px, 5vw, 52px);
-margin-bottom: 20px;
+.benefit-icon{
+font-size:31px;
+margin-bottom:8px;
 }
 
-.wholesale-box strong {
-color: #d66eff;
+.benefit h3{
+margin-bottom:5px;
 }
 
-.minimums {
-margin: 30px auto;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 16px;
-}
-
-.minimum {
-min-width: 220px;
-padding: 20px;
-border-radius: 15px;
-background: #120d18;
-border: 1px solid #472255;
-}
-
-.minimum .number {
-display: block;
-color: #d46cff;
-font-size: 30px;
-font-weight: 800;
+.benefit p{
+color:#777078;
+font-size:14px;
 }
 
 /* PRODUCTOS */
 
-.products-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 22px;
+.products{
+padding:80px 7%;
+background:#f5f0f9;
 }
 
-.product-card {
-padding: 30px 25px;
-min-height: 245px;
-border-radius: 20px;
-background: linear-gradient(
-145deg,
-rgba(39, 25, 49, 0.95),
-rgba(14, 10, 19, 0.95)
-);
-border: 1px solid rgba(187, 80, 238, 0.22);
-transition: 0.3s;
+.products-header{
+text-align:center;
+margin-bottom:45px;
 }
 
-.product-card:hover {
-transform: translateY(-5px);
-border-color: #a93ee0;
-box-shadow: 0 0 30px rgba(167, 56, 225, 0.16);
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
-.icon {
-font-size: 35px;
-margin-bottom: 16px;
+.card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 12px 35px rgba(40,20,60,.09);
+transition:.3s;
 }
 
-.product-card h3 {
-font-size: 21px;
-margin-bottom: 10px;
+.card:hover{
+transform:translateY(-7px);
+box-shadow:0 18px 45px rgba(50,20,80,.15);
 }
 
-.product-card p {
-color: #aaa2ae;
-font-size: 14px;
+.card img{
+width:100%;
+height:290px;
+object-fit:cover;
+display:block;
 }
 
-.product-card .qty {
-display: inline-block;
-margin-top: 17px;
-color: #d985ff;
-font-weight: bold;
-font-size: 13px;
+.card-content{
+padding:24px;
 }
 
-/* CLIENTES */
-
-.industries {
-background: #0c0910;
+.tag{
+display:inline-block;
+background:#efe1fb;
+color:#6426a8;
+padding:5px 11px;
+border-radius:50px;
+font-size:11px;
+font-weight:bold;
+text-transform:uppercase;
+margin-bottom:10px;
 }
 
-.industry-list {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 12px;
+.card h3{
+font-size:23px;
+margin-bottom:7px;
 }
 
-.industry {
-padding: 12px 20px;
-border-radius: 10px;
-background: #17111d;
-border: 1px solid #302038;
-color: #d7cedb;
+.card p{
+color:#716a75;
+font-size:14px;
 }
 
-/* PROCESO */
+/* MAYORISTAS */
 
-.steps {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 20px;
+.wholesale{
+padding:90px 7%;
+color:white;
+background:
+radial-gradient(circle at 10% 20%,rgba(150,70,220,.3),transparent 30%),
+linear-gradient(135deg,#180c25,#35114d);
 }
 
-.step {
-text-align: center;
-padding: 30px 20px;
+.wholesale-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
 }
 
-.step-number {
-width: 52px;
-height: 52px;
-margin: 0 auto 18px;
-display: grid;
-place-items: center;
-border-radius: 50%;
-background: linear-gradient(135deg, #7920ad, #d251ff);
-font-size: 20px;
-font-weight: bold;
-box-shadow: 0 0 20px rgba(195, 74, 247, 0.4);
+.wholesale h2{
+font-size:46px;
+line-height:1.1;
+margin:10px 0 18px;
 }
 
-.step h3 {
-margin-bottom: 10px;
+.wholesale p{
+color:#ded3e5;
 }
 
-.step p {
-color: #a9a1ad;
-font-size: 14px;
+.steps{
+display:grid;
+gap:14px;
+}
+
+.step{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.12);
+padding:18px;
+border-radius:16px;
+display:flex;
+gap:16px;
+align-items:center;
+}
+
+.number{
+min-width:42px;
+height:42px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#8b3ed1;
+font-weight:bold;
 }
 
 /* CTA */
 
-.final-cta {
-text-align: center;
-padding: 110px 0;
-background:
-radial-gradient(circle at center, rgba(126, 30, 174, 0.32), transparent 55%),
-#08060b;
+.cta{
+padding:90px 20px;
+text-align:center;
+background:white;
 }
 
-.final-cta h2 {
-font-size: clamp(35px, 6vw, 62px);
-margin-bottom: 20px;
+.cta-box{
+max-width:1000px;
+margin:auto;
+padding:65px 25px;
+border-radius:30px;
+color:white;
+background:linear-gradient(135deg,#62209e,#9c43dd);
+box-shadow:0 25px 55px rgba(100,38,168,.25);
 }
 
-.final-cta p {
-color: #bcb3c2;
-max-width: 650px;
-margin: 0 auto 30px;
+.cta h2{
+font-size:clamp(32px,5vw,52px);
+line-height:1.1;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:650px;
+margin:0 auto 28px;
+color:#f1e6f8;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+background:#25D366;
+color:white;
+padding:16px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+transition:.25s;
+}
+
+.whatsapp:hover{
+transform:scale(1.04);
 }
 
 /* FOOTER */
 
-footer {
-padding: 35px 0;
-text-align: center;
-border-top: 1px solid #26192d;
-color: #827987;
-font-size: 13px;
+footer{
+padding:45px 7%;
+background:#140b1e;
+color:#cfc5d5;
+text-align:center;
 }
 
-.whatsapp-floating {
-position: fixed;
-right: 20px;
-bottom: 20px;
-width: 58px;
-height: 58px;
-border-radius: 50%;
-display: grid;
-place-items: center;
-background: #25D366;
-color: white;
-font-size: 28px;
-z-index: 999;
-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+footer strong{
+color:white;
+font-size:20px;
+}
+
+footer p{
+margin-top:8px;
+font-size:14px;
+}
+
+/* BOTÓN FLOTANTE */
+
+.float-wa{
+position:fixed;
+right:22px;
+bottom:22px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+font-size:27px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+z-index:999;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 850px) {
-.products-grid {
-grid-template-columns: 1fr 1fr;
+@media(max-width:900px){
+
+nav ul{
+display:none;
 }
 
-.steps {
-grid-template-columns: 1fr 1fr;
+.benefits{
+grid-template-columns:repeat(2,1fr);
 }
 
-.nav-links {
-display: none;
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.wholesale-container{
+grid-template-columns:1fr;
 }
 }
 
-@media (max-width: 580px) {
-.products-grid,
-.steps {
-grid-template-columns: 1fr;
+@media(max-width:600px){
+
+.hero{
+min-height:82vh;
 }
 
-section {
-padding: 65px 0;
+.grid{
+grid-template-columns:1fr;
 }
 
-.hero {
-padding: 70px 0;
+.benefits{
+grid-template-columns:1fr;
 }
 
-.hero p {
-font-size: 16px;
+.card img{
+height:270px;
 }
 
-.btn {
-display: block;
-width: 100%;
-margin: 10px 0;
+.wholesale h2{
+font-size:36px;
+}
 }
 
-.btn-outline {
-margin-left: 0;
-}
-}
 </style>
 </head>
 
 <body>
 
-<!-- MENÚ -->
-<header>
-<div class="container">
-<nav>
-<div class="brand">Crea <span>by Cris</span></div>
+<!-- NAVEGACIÓN -->
 
-<div class="nav-links">
-<a href="#productos">Productos</a>
-<a href="#empresas">Empresas</a>
-<a href="#proceso">Cómo trabajamos</a>
-<a
-href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris,%20quisiera%20solicitar%20una%20cotización."
-target="_blank"
->
-Cotizar
-</a>
+<nav>
+
+<div class="brand">
+Crea <span>by Cris</span>
 </div>
+
+<ul>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#empresas">Empresas</a></li>
+<li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+<li><a href="#cotizar">Cotizar</a></li>
+</ul>
+
 </nav>
-</div>
-</header>
 
 
 <!-- PORTADA -->
-<main>
+
 <section class="hero">
-<div class="container hero-content">
 
-<div class="logo-text">
-Crea
-<small>by Cris</small>
-</div>
+<div class="hero-content">
 
-<div class="tagline">
-Personalización & Producción para Marcas
+<img src="logo.jpg"
+alt="Crea by Cris"
+class="logo"
+onerror="this.style.display='none'">
+
+<div class="badge">
+PERSONALIZACIÓN · PRODUCCIÓN · MAYOR
 </div>
 
 <h1>
-PRODUCIMOS TU MARCA
-<span class="gradient-text">A GRAN ESCALA</span>
+Hacemos que tu <span>marca se vea.</span>
 </h1>
 
 <p>
-Artículos promocionales y corporativos personalizados
-para empresas, instituciones, comercios, eventos y campañas.
-Producción especializada en grandes cantidades.
+Producción y personalización de artículos promocionales y corporativos
+para empresas, marcas, instituciones y eventos.
 </p>
 
-<div class="badges">
-<span class="badge">Producción al mayor</span>
-<span class="badge">Personalización con tu logo</span>
-<span class="badge">Pedidos corporativos</span>
-<span class="badge">Cotizaciones por volumen</span>
-</div>
+<div class="buttons">
 
-<a
-class="btn btn-primary"
-href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris,%20quiero%20solicitar%20una%20cotización%20corporativa."
-target="_blank"
->
-SOLICITAR COTIZACIÓN
+<a class="btn btn-primary"
+href="#productos">
+Ver productos
 </a>
 
-<a class="btn btn-outline" href="#productos">
-VER PRODUCTOS
+<a class="btn btn-secondary"
+href="#cotizar">
+Solicitar cotización
 </a>
 
 </div>
+
+</div>
+
 </section>
 
 
-<!-- MAYORISTA -->
-<section class="wholesale" id="empresas">
-<div class="container">
-<div class="wholesale-box">
+<!-- EMPRESAS -->
 
-<div class="eyebrow">Producción corporativa</div>
+<section class="corporativo" id="empresas">
 
-<h2>
-Personalización en
-<strong>grandes cantidades</strong>
+<div class="small-title">
+Soluciones corporativas
+</div>
+
+<h2 class="section-title">
+Tu identidad en cada producto
 </h2>
 
-<p>
-Trabajamos principalmente con empresas, marcas,
-instituciones y organizaciones que necesitan productos
-personalizados en volumen.
+<p class="section-description">
+Convertimos artículos promocionales en herramientas para comunicar
+tu marca. Trabajamos proyectos corporativos, promocionales y
+producciones por volumen.
 </p>
 
-<div class="minimums">
-<div class="minimum">
-<span class="number">100+</span>
-Tulas deportivas personalizadas
+<div class="benefits">
+
+<div class="benefit">
+<div class="benefit-icon">◆</div>
+<h3>Tu logo</h3>
+<p>Personalizamos cada producto con la identidad de tu empresa.</p>
 </div>
 
-<div class="minimum">
-<span class="number">500+</span>
-Artículos promocionales*
-</div>
+<div class="benefit">
+<div class="benefit-icon">▦</div>
+<h3>Pedidos al mayor</h3>
+<p>Soluciones para campañas, empresas, instituciones y eventos.</p>
 </div>
 
-<p style="font-size:13px;color:#827b87;">
-*Las cantidades mínimas pueden variar según el producto,
-modelo, material y tipo de personalización.
-</p>
+<div class="benefit">
+<div class="benefit-icon">✦</div>
+<h3>Variedad</h3>
+<p>Diferentes productos, colores y opciones de personalización.</p>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<h3>Atención personalizada</h3>
+<p>Cotizamos cada proyecto de acuerdo con tus necesidades.</p>
+</div>
 
 </div>
-</div>
+
 </section>
 
 
 <!-- PRODUCTOS -->
-<section id="productos">
-<div class="container">
 
-<div class="section-title">
-<div class="eyebrow">Nuestro catálogo</div>
-<h2>Productos para llevar tu marca más lejos</h2>
-<p>
-Soluciones promocionales y corporativas personalizadas
-con la identidad de tu empresa.
-</p>
+<section class="products" id="productos">
+
+<div class="products-header">
+
+<div class="small-title">
+Lo que producimos
 </div>
 
-<div class="products-grid">
+<h2 class="section-title">
+Productos para llevar tu marca más lejos
+</h2>
 
-<div class="product-card">
-<div class="icon">🎒</div>
+<p class="section-description">
+Personalización para empresas, promociones, campañas,
+eventos y necesidades corporativas.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<article class="card">
+
+<img src="botilitos.jpg" alt="Botilitos personalizados">
+
+<div class="card-content">
+
+<span class="tag">Corporativo</span>
+
+<h3>Botilitos personalizados</h3>
+
+<p>
+Ideales para empresas, colegios, equipos deportivos,
+eventos y campañas promocionales.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<img src="vasos.jpg" alt="Vasos personalizados">
+
+<div class="card-content">
+
+<span class="tag">Promocional</span>
+
+<h3>Vasos y termos</h3>
+
+<p>
+Personalización con logos y diseños para marcas,
+promociones y eventos.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<img src="tulas.jpg" alt="Tulas personalizadas">
+
+<div class="card-content">
+
+<span class="tag">Mayor</span>
+
 <h3>Tulas deportivas</h3>
+
 <p>
-Tulas personalizadas con el logo, colores o identidad
-de tu empresa, institución o evento.
+Producción personalizada para actividades deportivas,
+colegios, empresas y eventos.
 </p>
-<span class="qty">Desde 100 unidades</span>
+
 </div>
 
-<div class="product-card">
-<div class="icon">🛍️</div>
+</article>
+
+
+<article class="card">
+
+<img src="bolsas.jpg" alt="Bolsas ecológicas personalizadas">
+
+<div class="card-content">
+
+<span class="tag">Empresas</span>
+
 <h3>Bolsas ecológicas</h3>
+
 <p>
-Bolsas reutilizables personalizadas para campañas,
-comercios, eventos y promociones corporativas.
+Una opción funcional para promociones,
+comercios, eventos y campañas de marca.
 </p>
-<span class="qty">Producción al mayor</span>
+
 </div>
 
-<div class="product-card">
-<div class="icon">🥤</div>
-<h3>Tomatodos</h3>
+</article>
+
+
+<article class="card">
+
+<img src="gorras.jpg" alt="Gorras personalizadas">
+
+<div class="card-content">
+
+<span class="tag">Textil</span>
+
+<h3>Gorras y textiles</h3>
+
 <p>
-Botellas y tomatodos deportivos personalizados
-con el logo de tu empresa o campaña.
+Soluciones para uniformes, equipos,
+eventos y material publicitario.
 </p>
-<span class="qty">Grandes cantidades</span>
+
 </div>
 
-<div class="product-card">
-<div class="icon">🍹</div>
-<h3>Vasos, jarras y copas</h3>
+</article>
+
+
+<article class="card">
+
+<img src="pastilleros.jpg" alt="Pastilleros personalizados">
+
+<div class="card-content">
+
+<span class="tag">Farmacéutico</span>
+
+<h3>Pastilleros y artículos médicos</h3>
+
 <p>
-Artículos personalizados para marcas, eventos,
-restaurantes, promociones y activaciones.
+Productos promocionales para farmacias,
+laboratorios, clínicas y jornadas de salud.
 </p>
-<span class="qty">Producción al mayor</span>
+
 </div>
 
-<div class="product-card">
-<div class="icon">🔑</div>
+</article>
+
+
+<article class="card">
+
+<img src="llaveros.jpg" alt="Llaveros corporativos">
+
+<div class="card-content">
+
+<span class="tag">Merchandising</span>
+
 <h3>Llaveros corporativos</h3>
-<p>
-Llaveros personalizados con logos y diseños para
-empresas, concesionarios, talleres y campañas.
-</p>
-<span class="qty">Pedidos por volumen</span>
-</div>
 
-<div class="product-card">
-<div class="icon">💊</div>
-<h3>Promocionales para salud</h3>
 <p>
-Pastilleros y artículos personalizados para
-farmacias, laboratorios, clínicas y profesionales.
+Fabricados y personalizados con la identidad
+visual de empresas y marcas.
 </p>
-<span class="qty">Producción corporativa</span>
-</div>
-
-<div class="product-card">
-<div class="icon">👕</div>
-<h3>Textil corporativo</h3>
-<p>
-Franelas, polos, gorras, uniformes y prendas
-personalizadas para equipos de trabajo.
-</p>
-<span class="qty">Pedidos empresariales</span>
-</div>
-
-<div class="product-card">
-<div class="icon">💡</div>
-<h3>Avisos y letras corpóreas</h3>
-<p>
-Letras 3D, avisos luminosos, acrílico, PVC y
-soluciones visuales para locales y oficinas.
-</p>
-<span class="qty">Cotización según proyecto</span>
-</div>
-
-<div class="product-card">
-<div class="icon">✨</div>
-<h3>Proyectos personalizados</h3>
-<p>
-¿Buscas otro producto? Cuéntanos tu idea y evaluamos
-las opciones de fabricación y personalización.
-</p>
-<span class="qty">Consulta disponibilidad</span>
-</div>
 
 </div>
+
+</article>
+
+
+<article class="card">
+
+<img src="corporeos.jpg" alt="Corpóreos y avisos">
+
+<div class="card-content">
+
+<span class="tag">Identidad visual</span>
+
+<h3>Corpóreos y avisos</h3>
+
+<p>
+Soluciones visuales para locales,
+oficinas, comercios y espacios corporativos.
+</p>
+
 </div>
+
+</article>
+
+
+<article class="card">
+
+<img src="especiales.jpg" alt="Proyectos personalizados">
+
+<div class="card-content">
+
+<span class="tag">A medida</span>
+
+<h3>Proyectos especiales</h3>
+
+<p>
+¿Necesitas otro producto?
+Cuéntanos tu idea y evaluamos las opciones para producirla.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
 </section>
 
 
-<!-- TIPOS DE CLIENTES -->
-<section class="industries">
-<div class="container">
+<!-- CÓMO TRABAJAMOS -->
 
-<div class="section-title">
-<div class="eyebrow">Trabajamos para marcas</div>
-<h2>Soluciones para diferentes sectores</h2>
+<section class="wholesale" id="como-trabajamos">
+
+<div class="wholesale-container">
+
+<div>
+
+<div class="small-title" style="color:#c994ff;">
+Producción corporativa
+</div>
+
+<h2>
+Del concepto a un producto que representa tu marca.
+</h2>
+
 <p>
-Producción pensada para necesidades corporativas,
-promocionales e institucionales.
+Atendemos proyectos de diferentes volúmenes.
+La cantidad mínima y el precio dependen del producto,
+diseño, técnica de personalización y cantidad solicitada.
 </p>
-</div>
-
-<div class="industry-list">
-<span class="industry">Empresas</span>
-<span class="industry">Farmacias</span>
-<span class="industry">Laboratorios</span>
-<span class="industry">Clínicas</span>
-<span class="industry">Restaurantes</span>
-<span class="industry">Colegios</span>
-<span class="industry">Concesionarios</span>
-<span class="industry">Talleres</span>
-<span class="industry">Instituciones</span>
-<span class="industry">Eventos</span>
-<span class="industry">Comercios</span>
-<span class="industry">Emprendimientos</span>
-</div>
 
 </div>
-</section>
 
-
-<!-- PROCESO -->
-<section id="proceso">
-<div class="container">
-
-<div class="section-title">
-<div class="eyebrow">Cotiza tu producción</div>
-<h2>¿Cómo trabajamos?</h2>
-</div>
 
 <div class="steps">
 
 <div class="step">
-<div class="step-number">1</div>
-<h3>Cuéntanos tu idea</h3>
-<p>
-Indícanos el producto que necesitas y la cantidad aproximada.
-</p>
+<div class="number">1</div>
+<div>
+<strong>Cuéntanos qué necesitas</strong>
+<p>Producto, cantidad aproximada y objetivo del proyecto.</p>
+</div>
 </div>
 
 <div class="step">
-<div class="step-number">2</div>
-<h3>Envíanos tu logo</h3>
-<p>
-Compártenos la identidad o diseño que deseas personalizar.
-</p>
+<div class="number">2</div>
+<div>
+<strong>Envíanos tu logo</strong>
+<p>Revisamos la identidad que deseas aplicar.</p>
+</div>
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
-<h3>Recibe tu cotización</h3>
-<p>
-Evaluamos cantidades, producto y personalización.
-</p>
+<div class="number">3</div>
+<div>
+<strong>Preparamos tu cotización</strong>
+<p>Según producto, personalización y volumen.</p>
+</div>
 </div>
 
 <div class="step">
-<div class="step-number">4</div>
-<h3>Producimos</h3>
-<p>
-Llevamos la identidad de tu marca al producto final.
-</p>
+<div class="number">4</div>
+<div>
+<strong>Producción</strong>
+<p>Tu proyecto pasa a preparación y producción.</p>
+</div>
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
-<!-- CTA FINAL -->
-<section class="final-cta">
+<!-- COTIZAR -->
 
-<div class="container">
+<section class="cta" id="cotizar">
 
-<div class="eyebrow">Crea by Cris</div>
+<div class="cta-box">
+
+<div style="font-size:13px;letter-spacing:2px;font-weight:bold;margin-bottom:12px;">
+COTIZA TU PROYECTO
+</div>
 
 <h2>
-TU MARCA MERECE
-<span class="gradient-text">DESTACAR</span>
+¿Listo para personalizar tu marca?
 </h2>
 
 <p>
-Cuéntanos qué producto necesitas, la cantidad requerida
-y cómo quieres personalizarlo. Preparamos una cotización
-adaptada a tu proyecto.
+Escríbenos por WhatsApp indicando el producto que deseas,
+cantidad aproximada y, si ya lo tienes, envíanos tu logo.
 </p>
 
-<a
-class="btn btn-primary"
-href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris.%20Quisiera%20cotizar%20un%20pedido.%0A%0AEmpresa:%20%0AProducto:%20%0ACantidad:%20%0AFecha%20aproximada:"
-target="_blank"
->
-COTIZAR POR WHATSAPP
+<!-- CAMBIA EL NÚMERO SI ES NECESARIO -->
+
+<a class="whatsapp"
+href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris,%20quiero%20solicitar%20una%20cotización."
+target="_blank">
+
+💬 Cotizar por WhatsApp
+
 </a>
 
 </div>
 
 </section>
-</main>
 
 
-<!-- FOOTER -->
+<!-- PIE -->
+
 <footer>
-<div class="container">
-<strong>Crea by Cris</strong><br>
+
+<strong>Crea by Cris</strong>
+
+<p>
 Personalización & Producción para Marcas
-</div>
+</p>
+
+<p>
+Caracas, Venezuela
+</p>
+
+<p>
+Instagram: @crea_bycris
+</p>
+
+<p style="margin-top:20px;font-size:12px;opacity:.65;">
+© 2026 Crea by Cris · Todos los derechos reservados
+</p>
+
 </footer>
 
 
 <!-- WHATSAPP FLOTANTE -->
-<a
-class="whatsapp-floating"
-href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris,%20quisiera%20información."
+
+<a class="float-wa"
+href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris,%20quiero%20información."
 target="_blank"
-aria-label="WhatsApp"
->
+aria-label="WhatsApp">
+
 ☎
+
 </a>
 
 </body>

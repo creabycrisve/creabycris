@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crea by Cris | Productos personalizados</title>
+
+<meta name="description" content="Productos personalizados para empresas, emprendimientos y eventos. Termos, gorras, textiles, llaveros, accesorios, corpóreos y más.">
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f8f5fb;
+color: #2f2535;
+line-height: 1.6;
+}
+
+header {
+background: linear-gradient(135deg, #321044, #6e2f91, #b868d5);
+color: white;
+padding: 22px 20px;
+position: sticky;
+top: 0;
+z-index: 20;
+box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+.nav {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+.brand {
+font-size: 24px;
+font-weight: bold;
+}
+
+.brand span {
+color: #f5d8ff;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 18px;
+font-size: 14px;
+}
+
+.hero {
+min-height: 78vh;
+display: flex;
+align-items: center;
+background:
+radial-gradient(circle at 10% 20%, rgba(191,114,220,.25), transparent 35%),
+radial-gradient(circle at 90% 30%, rgba(117,53,157,.20), transparent 35%),
+linear-gradient(180deg, #fff, #f5ecfa);
+padding: 70px 20px;
+}
+
+.hero-content {
+max-width: 1000px;
+margin: auto;
+text-align: center;
+}
+
+.tag {
+display: inline-block;
+background: #ead3f5;
+color: #662b83;
+padding: 8px 16px;
+border-radius: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+h1 {
+font-size: clamp(40px, 7vw, 72px);
+line-height: 1.05;
+color: #3f1453;
+margin-bottom: 20px;
+}
+
+.hero p {
+max-width: 760px;
+margin: 0 auto 30px;
+font-size: 19px;
+color: #61536a;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+gap: 14px;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-block;
+text-decoration: none;
+padding: 14px 24px;
+border-radius: 30px;
+font-weight: bold;
+transition: .2s ease;
+}
+
+.btn-primary {
+background: #6e2f91;
+color: white;
+}
+
+.btn-primary:hover {
+background: #4e1d68;
+transform: translateY(-2px);
+}
+
+.btn-secondary {
+background: white;
+color: #6e2f91;
+border: 2px solid #6e2f91;
+}
+
+section {
+padding: 75px 20px;
+}
+
+.container {
+max-width: 1100px;
+margin: auto;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.section-title h2 {
+font-size: 36px;
+color: #48185f;
+margin-bottom: 10px;
+}
+
+.section-title p {
+color: #6c6071;
+max-width: 680px;
+margin: auto;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 22px;
+}
+
+.card {
+background: white;
+padding: 30px 22px;
+border-radius: 20px;
+box-shadow: 0 8px 30px rgba(78, 29, 104, .08);
+text-align: center;
+border: 1px solid #eee4f3;
+}
+
+.icon {
+font-size: 42px;
+margin-bottom: 14px;
+}
+
+.card h3 {
+color: #54206d;
+margin-bottom: 8px;
+}
+
+.about {
+background: #442055;
+color: white;
+}
+
+.about-box {
+max-width: 850px;
+margin: auto;
+text-align: center;
+}
+
+.about h2 {
+font-size: 38px;
+margin-bottom: 18px;
+}
+
+.about p {
+color: #f1e5f5;
+font-size: 18px;
+}
+
+.steps {
+counter-reset: paso;
+}
+
+.step {
+position: relative;
+}
+
+.step::before {
+counter-increment: paso;
+content: counter(paso);
+display: inline-flex;
+width: 42px;
+height: 42px;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: #6e2f91;
+color: white;
+font-weight: bold;
+margin-bottom: 14px;
+}
+
+.contact {
+text-align: center;
+background: linear-gradient(135deg, #efe0f6, #faf7fc);
+}
+
+.contact-box {
+max-width: 800px;
+margin: auto;
+background: white;
+padding: 45px 30px;
+border-radius: 24px;
+box-shadow: 0 12px 35px rgba(71, 28, 92, .10);
+}
+
+.contact h2 {
+color: #48185f;
+font-size: 36px;
+margin-bottom: 14px;
+}
+
+.contact p {
+margin-bottom: 25px;
+color: #65576d;
+}
+
+footer {
+background: #27102f;
+color: #ddcbe4;
+text-align: center;
+padding: 28px 20px;
+font-size: 14px;
+}
+
+footer a {
+color: #f1c9ff;
+text-decoration: none;
+}
+
+.whatsapp-float {
+position: fixed;
+right: 20px;
+bottom: 20px;
+width: 58px;
+height: 58px;
+background: #25D366;
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 27px;
+text-decoration: none;
+box-shadow: 0 6px 22px rgba(0,0,0,.22);
+z-index: 50;
+}
+
+@media (max-width: 700px) {
+nav {
+display: none;
+}
+
+.hero {
+min-height: 70vh;
+}
+
+.section-title h2,
+.about h2,
+.contact h2 {
+font-size: 30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="brand">Crea <span>by Cris</span></div>
+
+<nav>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#proceso">Cómo trabajamos</a>
+<a href="#contacto">Cotizar</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="hero-content">
+<div class="tag">✨ Personalización para empresas, marcas y eventos</div>
+
+<h1>Tu marca merece hacerse notar.</h1>
+
+<p>
+Convertimos tus ideas en productos personalizados que representan
+la identidad de tu empresa, emprendimiento o evento.
+</p>
+
+<div class="buttons">
+<a class="btn btn-primary"
+href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris%20👋%20Quisiera%20cotizar%20productos%20personalizados%20para%20mi%20empresa."
+target="_blank">
+💬 Solicitar cotización
+</a>
+
+<a class="btn btn-secondary"
+href="https://www.instagram.com/crea_bycris/"
+target="_blank">
+Ver Instagram
+</a>
+</div>
+</div>
+</section>
+
+<section id="productos">
+<div class="container">
+
+<div class="section-title">
+<h2>¿Qué podemos personalizar?</h2>
+<p>
+Productos promocionales para empresas, emprendimientos,
+eventos y regalos corporativos.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🥤</div>
+<h3>Termos y vasos</h3>
+<p>Personalizados con tu logo, nombre o diseño.</p>
+</div>
+
+<div class="card">
+<div class="icon">🧢</div>
+<h3>Gorras y textiles</h3>
+<p>Bordados y personalización para equipos, marcas y empresas.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔑</div>
+<h3>Llaveros y accesorios</h3>
+<p>Detalles prácticos para promocionar tu identidad.</p>
+</div>
+
+<div class="card">
+<div class="icon">💊</div>
+<h3>Pastilleros</h3>
+<p>Ideales para farmacias, laboratorios, clínicas y eventos.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Corpóreos</h3>
+<p>Elementos personalizados para espacios comerciales y eventos.</p>
+</div>
+
+<div class="card">
+<div class="icon">💡</div>
+<h3>Iluminación LED</h3>
+<p>Diseños personalizados para destacar tu marca.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎁</div>
+<h3>Regalos corporativos</h3>
+<p>Opciones para clientes, empleados y celebraciones empresariales.</p>
+</div>
+
+<div class="card">
+<div class="icon">💜</div>
+<h3>Y mucho más</h3>
+<p>Cuéntanos tu idea y buscamos una opción adaptada a tu proyecto.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="about" id="nosotros">
+<div class="about-box">
+<h2>Más que productos, creamos identidad.</h2>
+
+<p>
+En Crea by Cris ayudamos a empresas, emprendimientos y marcas
+a transformar una idea en un producto que las represente.
+Trabajamos personalizaciones por cantidades y atendemos proyectos
+para eventos, publicidad, regalos corporativos y promociones.
+</p>
+</div>
+</section>
+
+<section id="proceso">
+<div class="container">
+
+<div class="section-title">
+<h2>Así trabajamos</h2>
+<p>Hacer tu pedido puede ser muy sencillo.</p>
+</div>
+
+<div class="grid steps">
+
+<div class="card step">
+<h3>Cuéntanos tu idea</h3>
+<p>Dinos qué producto buscas y para qué lo necesitas.</p>
+</div>
+
+<div class="card step">
+<h3>Envíanos tu logo</h3>
+<p>Trabajamos con tu identidad gráfica o diseño.</p>
+</div>
+
+<div class="card step">
+<h3>Indica la cantidad</h3>
+<p>La cotización dependerá del producto y volumen solicitado.</p>
+</div>
+
+<div class="card step">
+<h3>Recibe tu cotización</h3>
+<p>Te orientamos con las opciones disponibles para tu proyecto.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="contact" id="contacto">
+<div class="contact-box">
+
+<h2>¿Listo para personalizar tu marca?</h2>
+
+<p>
+Escríbenos por WhatsApp y cuéntanos qué producto deseas,
+cantidad aproximada y si ya tienes el logo de tu empresa.
+</p>
+
+<a class="btn btn-primary"
+href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris%20👋%20Quisiera%20cotizar%20productos%20personalizados.%20Producto:%20%20Cantidad:%20%20"
+target="_blank">
+💬 Cotizar por WhatsApp
+</a>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>
+© 2026 Crea by Cris · Caracas, Venezuela
+</p>
+
+<p style="margin-top:8px;">
+Instagram:
+<a href="https://www.instagram.com/crea_bycris/" target="_blank">
+@crea_bycris
+</a>
+</p>
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/584142602470?text=Hola%20Crea%20by%20Cris%20👋%20Quisiera%20más%20información."
+target="_blank"
+aria-label="WhatsApp">
+☎
+</a>
+
+</body>
+</html>
